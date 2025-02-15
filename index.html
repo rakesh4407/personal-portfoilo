@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Shibu Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .gallery-item {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    video {
+      width: 320px;
+      height: auto;
+    }
+
+    button {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Video -->
+  <video autoplay muted loop id="backgroundVideo">
+    <source src="canvas.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Existing Content -->
+  <header>
+    <h1>Welcome</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#digital-art">Art</a></li>
+        <li><a href="#music-player">BG Music</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero-section">
+    <div class="intro">
+      <h2>Hi, I'm Aditya</h2>
+      <p>A passionate coder & digital artist, currently pursuing BCA at KRMU.</p>
+      <a href="#skills" class="btn">Explore My Skills</a>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Coding Skills</h2>
+    <p>I specialize in the following technologies:</p>
+    <ul class="skills-list">
+      <li><img src="html_icon.png" alt="HTML">HTML</li>
+      <li><img src="css_icon.png" alt="CSS">CSS</li>
+      <li><img src="js_icon.png" alt="JavaScript">JavaScript</li>
+      <li><img src="python_icon.png" alt="Python">Python</li>
+      <li><img src="softwareEng_icon.png" alt="Software Engineering">Software Engineering Principles</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul class="projects-list">
+      <li><a href="#">Project 1</a> - Website built with HTML & CSS</li>
+      <li><a href="#">Project 2</a> - JavaScript To-Do List App</li>
+      <li><a href="#">Project 3</a> - Python Task Automation</li>
+    </ul>
+  </section>
+
+  <section id="digital-art">
+    <h2>Digital Art</h2>
+    <p>Check out some of my digital artwork below:</p>
+    <div class="gallery">
+      <div class="gallery-item">
+        <video id="video1" preload="metadata" muted>
+          <source src="video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <button onclick="toggleVideoPlay('video1')">Play Video 1</button>
+      </div>
+      <div class="gallery-item">
+        <video id="video2" preload="metadata" muted>
+          <source src="video2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <button onclick="toggleVideoPlay('video2')">Play Video 2</button>
+      </div>
+      <div class="gallery-item">
+        <video id="video3" preload="metadata" muted>
+          <source src="video3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <button onclick="toggleVideoPlay('video3')">Play Video 3</button>
+      </div>
+      <div class="gallery-item">
+        <video id="video5" preload="metadata" muted>
+          <source src="video5.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <button onclick="toggleVideoPlay('video5')">Play Video 4</button>
+      </div>
+    </div>
+    <button onclick="playAllVideos()">Play All</button>
+  </section>
+
+  <!-- Music Player Section -->
+  <section id="music-player">
+    <h2>Background Music Player</h2>
+    <div class="player">
+      <audio id="audioPlayer" src="musik.mp3" loop autoplay></audio>
+      <button onclick="toggleAudioPlay()">Play / Pause</button>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+  
+    <!-- Centered Email Button -->
+    <div class="button-center">
+      <button onclick="sendEmailAlert()">Email:adityashibu275898@gmail.com</button>
+    </div>
+  </section>
+  
+
+  <footer>
+    <p>© 2024 Aditya Shibu</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/kishibe_rohan275898/">Instagram</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleVideoPlay(videoId) {
+      const video = document.getElementById(videoId);
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    }
+
+    function playAllVideos() {
+      const videos = document.querySelectorAll('.gallery-item video');
+      videos.forEach(video => {
+        video.play();
+      });
+    }
+
+    function toggleAudioPlay() {
+      const audioPlayer = document.getElementById("audioPlayer");
+      if (audioPlayer.paused) {
+        audioPlayer.play();
+      } else {
+        audioPlayer.pause();
+      }
+    }
+    function sendEmailAlert() {
+    alert("Opening email client...");
+    window.location.href = 'mailto:adityashibu275898@gmail.com';
+    }
+  </script>
+</body>
+</html>

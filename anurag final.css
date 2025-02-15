@@ -1,0 +1,138 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f5f5f0; /* Light grass-green background */
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: #1a1d1d; /* Dark field green */
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: #ffffff; /* Gold, inspired by goal posts */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #efa24f; /* Bright field green */
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    height: 100vh;
+    background-color: #28a4ed; /* Darker green for a field atmosphere */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  
+  .hero-section .intro h2 {
+    font-size: 3em;
+  }
+  
+  .hero-section .intro p {
+    font-size: 1.2em;
+    margin: 20px 0;
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: 10px 20px;
+    background-color: #1c66b0; /* Football brown */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #A0522D; /* Slightly lighter football brown */
+  }
+  
+  /* Skills Section */
+  #skills {
+    background-color: #E0E8D1; /* Light green to keep field theme */
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  #skills h2 {
+    font-size: 2.5em;
+    color: #2C3E50;
+  }
+  
+  .skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between items */
+    flex-wrap: wrap; /* Allows wrapping to new lines on smaller screens */
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .skills-list li {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center image and text */
+    color: #2C3E50;
+    font-weight: bold;
+  }
+  
+  .skills-list img {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  /* Contact Section */
+  #contact {
+    background-color: #363832;
+    padding: 60px 20px;
+  }
+  
+  #contact h2 {
+    font-size: 2.5em;
+    color: #2C3E50;
+    button.a{
+        text-align: center;
+       }
+  }
+  
+ 
+  

@@ -1,0 +1,305 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #3498db;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    height: 100vh;
+    background-color: #34495e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero-section .intro h2 {
+    font-size: 3em;
+  }
+  
+  .hero-section .intro p {
+    font-size: 1.2em;
+    margin: 20px 0;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Skills Section */
+  #skills {
+    background-color: #ecf0f1;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  #skills h2 {
+    font-size: 2.5em;
+    color: #2c3e50;
+  }
+  
+  .skills-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .skills-list li {
+    text-align: center;
+    color: #2c3e50;
+    font-weight: bold; /* Makes text below icons bold */
+  }
+  
+  .skills-list img {
+    width: 150px; /* Set consistent width for all icons */
+    height: 150px; /* Set consistent height for all icons */
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 5px; /* Space between image and text */
+  }
+  
+  /* Projects Section */
+  #projects {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  #projects h2 {
+    font-size: 2.5em;
+    color: #2c3e50;
+  }
+  
+  .projects-list {
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  .projects-list li {
+    margin: 15px 0;
+  }
+  
+  .projects-list li a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  .projects-list li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Digital Art Section */
+  #digital-art {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  #digital-art h2 {
+    font-size: 2.5em;
+    color: #2c3e50;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery-item {
+    margin: 15px;
+    position: relative; /* Position relative to use for child elements */
+    cursor: pointer; /* Indicates clickable items */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.05); /* Slightly enlarges on hover */
+  }
+  
+  .image {
+    width: 300px; /* Set width for all images */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 10px;
+  }
+  
+  /* Contact Section */
+  #contact {
+    background-color: #ecf0f1;
+    padding: 60px 20px;
+  }
+  
+  #contact h2 {
+    font-size: 2.5em;
+    color: #2c3e50;
+  }
+  
+  #contact form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  #contact label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #contact input,
+  #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer .social-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  /* Background Video Styling */
+#backgroundVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; /* Ensures the video stays behind all content */
+  opacity: 0.5; /* Adjust transparency if needed */
+}
+/* Music Player Section */
+#music-player {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 40px auto;
+}
+
+#music-player h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+#music-player .player {
+  margin-top: 15px;
+}
+
+#music-player button {
+  background-color: #2c3e50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#music-player button:hover {
+  background-color: #34495e;
+}
+#music-player .player {
+  display: flex;
+  justify-content: center; /* Centers button horizontally */
+  align-items: center; /* Centers button vertically */
+  flex-direction: column; /* Stack the audio player and button vertically */
+  margin-top: 15px;
+}
+
+#music-player button {
+  background-color: #2c3e50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0; /* Adds some space around the button */
+  transition: background-color 0.3s ease;
+}
+
+#music-player button:hover {
+  background-color: #34495e;
+}
+/* Center the button */
+.button-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Optional styling for the button */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
